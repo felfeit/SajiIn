@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_ingredient_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        app:layout_constraintEnd_toStartOf="@id/tv_ingredient_measure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="0.5"
+        tools:text="Olive Oil" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_ingredient_measure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="0.5"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toEndOf="@id/tv_ingredient_name"
+        tools:text="1 tbsp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

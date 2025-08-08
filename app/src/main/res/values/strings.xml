@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">SajiIn</string>
+    <string-array name="letters">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+        <item>e</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+        <item>m</item>
+        <item>n</item>
+        <item>o</item>
+        <item>p</item>
+        <item>r</item>
+        <item>s</item>
+        <item>t</item>
+        <item>v</item>
+        <item>w</item>
+    </string-array>
+    <string-array name="categories">
+        <item>1|Beef|https://www.themealdb.com/images/category/beef.png</item>
+        <item>2|Chicken|https://www.themealdb.com/images/category/chicken.png</item>
+        <item>3|Dessert|https://www.themealdb.com/images/category/dessert.png</item>
+        <item>4|Lamb|https://www.themealdb.com/images/category/lamb.png</item>
+        <item>6|Pasta|https://www.themealdb.com/images/category/pasta.png</item>
+        <item>8|Seafood|https://www.themealdb.com/images/category/seafood.png</item>
+        <item>11|Vegan|https://www.themealdb.com/images/category/vegan.png</item>
+        <item>9|Side|https://www.themealdb.com/images/category/side.png</item>
+    </string-array>
+    <string name="app_icon_description">App Icon</string>
+    <string name="search_menu_title">Search</string>
+    <string name="header_text">What would you like\nto cook today?</string>
+    <string name="meal_image_description">Meal Image</string>
+    <string name="for_you_label">For you</string>
+    <string name="popular_recipes_label">Popular Recipes</string>
+    <string name="search_hint">Search meals</string>
+    <string name="categories_text_label">Categories</string>
+    <string name="no_results_found">No Recipes Found</string>
+    <string name="search_error">Unexpected error occurred</string>
+    <string name="no_meals_in_category">No meals found in %s category.</string>
+    <string name="error_fetching_meals">Failed to load meals. Please try again.</string>
+    <string name="instructions_text_label">Instructions</string>
+    <string name="ingredients_text_label">Ingredients</string>
+    <string name="ingredients_count">Ingridients</string>
+    <string name="meal_not_found">Meal not found</string>
+    <string name="error_fetching_meal_detail">Error getting recipe</string>
+    <string name="no_bookmarks_found">No recipes bookmarked</string>
+</resources>

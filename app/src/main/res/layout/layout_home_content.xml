@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <!-- Header Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/header_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            app:fontFamily="@font/plus_jakarta_sans_bold"
+            android:text="@string/header_text"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_bookmarks"
+            style="@style/Widget.Material3.Button.IconButton.Filled"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:iconGravity="textEnd"
+            android:layout_marginEnd="16dp"
+            app:backgroundTint="@color/primary"
+            app:icon="@drawable/ic_bookmarks_fill"
+            app:iconTint="@color/white" />
+
+    </LinearLayout>
+
+    <!--  Meal Categories  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_meal_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="4"
+        tools:itemCount="8"
+        tools:listitem="@layout/item_meal_category" />
+
+    <!-- Recommended Recipes -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_label_for_you"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/for_you_label"
+        app:fontFamily="@font/plus_jakarta_sans_medium"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recommended_meals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_meal_grid" />
+
+    <!-- Popular Recipes -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_label_popular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/popular_recipes_label"
+        app:fontFamily="@font/plus_jakarta_sans_medium"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_popular_meals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_meal_list" />
+
+</LinearLayout>

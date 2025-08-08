@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_meal_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_youtube"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        app:layout_constraintBottom_toBottomOf="@id/iv_meal_thumbnail"
+        app:layout_constraintEnd_toEndOf="@id/iv_meal_thumbnail"
+        app:layout_constraintStart_toStartOf="@id/iv_meal_thumbnail"
+        app:layout_constraintTop_toTopOf="@id/iv_meal_thumbnail"
+        app:icon="@drawable/ic_play"
+        app:iconGravity="textEnd"
+        app:backgroundTint="@color/primary"
+        app:rippleColor="@color/secondary"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_meal_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_meal_thumbnail"
+        tools:text="@tools:sample/lorem[6]" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_meal_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_dish"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:drawableTint="@color/primary"
+        app:layout_constraintEnd_toStartOf="@id/tv_meal_area"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_meal_name"
+        tools:text="@tools:sample/lorem[2]" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_meal_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_area"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="16dp"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:drawableTint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toEndOf="@id/tv_meal_category"
+        app:layout_constraintTop_toBottomOf="@id/tv_meal_name"
+        tools:text="@tools:sample/lorem[2]" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_instruction_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:paddingTop="8dp"
+        android:text="@string/instructions_text_label"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_meal_category" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_instruction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_instruction_label"
+        tools:text="@tools:sample/lorem[30]" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_ingredients_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/ingredients_text_label"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/tv_ingredients_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_instruction" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_ingredients_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/primary"
+        app:layout_constraintBottom_toBottomOf="@id/tv_ingredients_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_ingredients_label"
+        app:layout_constraintTop_toTopOf="@id/tv_ingredients_label"
+        tools:text="10 ingredients" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_ingredients"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:nestedScrollingEnabled="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_ingredients_label"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_ingredient" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
