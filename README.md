@@ -1,13 +1,11 @@
-# SajiIn
-🍽️ SajiIn
+# 🍽️ SajiIn
 SajiIn adalah aplikasi Android yang memudahkan kamu mencari, menjelajahi, dan menyimpan berbagai resep masakan dari seluruh dunia. Data resep diambil dari API TheMealDB, sehingga kamu bisa menemukan inspirasi menu harian, lengkap dengan bahan, instruksi memasak, dan gambar yang menggugah selera.
 
 Dengan SajiIn, kamu bisa mencari resep berdasarkan kata kunci, menjelajahi kategori masakan, melihat detail resep, dan menyimpan resep favorit ke bookmark untuk diakses kembali kapan saja.
 
 ## 🖼️ Tampilan Aplikasi
 
-
-[!SajiIn App UI]: # (Image URL)
+![Sajiin App Preview](https://github.com/user-attachments/assets/8aadf267-d958-4dae-a0c6-402cae247801)
 
 ## ✨ Fitur Utama
 - 🔎 **Pencarian Resep** – Temukan resep berdasarkan kata kunci dengan cepat dan akurat.
